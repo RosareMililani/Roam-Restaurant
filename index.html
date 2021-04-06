@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset='utf-8' />
+  <title>Roam Restaurants</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="styles/default-styles.css">
+  <script src="./src/loader.js" type="module"></script>
+</head>
+
+<body>
+
+  <div id='map'></div>
+
+  <div id="controls">
+    <header>
+      <h1>Roam Restaurants</h1>
+    </header>
+
+    <div class="widgets">
+      <input id="searchterm" type="text" size="20" maxlength="100"
+        placeholder="  Search by key terms to find restraunts in Rochester">
+
+    </div>
+    <!-- Search Buttons -->
+    <button id="searchButton">Search!</button>
+    <button id="ffBtn">Load some Fast Food Restaurants!</button>
+    <button id="topBtn">Load Top 50 Restaurants in US! (Yelp)</button>
+    <button id="clearBtn">Clear by Option</button>
+
+    <!-- Radio Buttons -->
+    <input type="radio" id="clearAll" name="clearRadio" value="clear" checked>
+    <label for="clearAll"> Clear All?</label>
+    <input type="radio" id="clearMap" name="clearRadio" value="clearMap">
+    <label for="clearMap"> Clear Map</label>
+    <input type="radio" id="clearResults" name="clearRadio" value="clearResults">
+    <label for="clearResults"> Clear Results</label>
+
+    <!-- Para for cleared map -->
+    <p id="cleared"></p>
+
+    <!-- list in restraunts -->
+    <div id=results>
+      <div id=nameRestaurants>
+        <ul id=restaurantList></ul>
+      </div>
+    </div>
+
+    <footer>
+      Mililani Rosare &copy;May 2020
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>

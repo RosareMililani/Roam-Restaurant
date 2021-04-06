@@ -1,0 +1,121 @@
+* {
+    font-family: myFont;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../font/CrimsonText-Regular.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: myFontBold;
+    src: url(../font/CrimsonText-SemiBoldItalic.ttf);
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.markerTop {
+    background-image: url('../images/top-icon.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.markerFF {
+    background-image: url('../images/fastfood-icon.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#controls {
+    position: absolute;
+    z-index: 1;
+    width: 400px;
+    max-height:100%;
+    background-color: lightsteelblue;
+    border: 1px solid black;
+    overflow:scroll;
+    overflow-x: hidden;
+}
+
+#controls button {
+    font-size: .9em;
+    width: 97%;
+    background-color: hsl(0, 65%, 58%);
+    border-radius: 12px;
+    margin: 5px;
+}
+
+#controls button:hover {
+    /* color: #777; */
+    background-color: hsl(0, 65%, 80%);
+}
+
+.radio-inline {
+    margin: 10px;
+}
+
+#searchterm {
+    border-radius: 12px;
+    width: 97%;
+    margin: 5px;
+}
+
+#cleared {
+    text-align: center;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    font-family: myFontBold;
+}
+
+.widgets {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* footer */
+
+footer {
+    position: fixed;
+    width: 400px;
+    background-color: lightslategray;
+    text-align: center;
+}
